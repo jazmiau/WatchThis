@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico" sizes="16x16 32x32 64x64">
+      <title>Watch This</title>
+      <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/Header-Nightsky.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  </head>
+  <body>
+    <!-- SPLASH -->
+    <div id="splash">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="gif-splash" src="assets/img/gif-splash.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-nightsky">
+
+        <div class="hero">
+          <img id="logo-index" src="assets/img/logoindex.png" alt="logo">
+            <p class="index-p">Regístrate y encuentra la película para tí.</p>
+
+            <!--modal de registro-->
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modal-reg">Regístrate</button>
+            <div class="modal fade" id="modal-reg" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="gridSystemModalLabel">Regístro</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-md-4 col-md-offset-4">
+                        <i class="fa fa-sign-in init-reg" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1 input-group reg">
+                        <span class="input-group-addon" id="basic-addon1">Nombre</span>
+                        <input type="text" class="form-control" placeholder="name" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1 input-group reg">
+                        <span class="input-group-addon" id="basic-addon2">Nombre de usuario</span>
+                        <input type="text" class="form-control" placeholder="user name" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1 input-group reg">
+                        <span class="input-group-addon" >Correo electrónico</span>
+                        <input type="text" class="form-control" id="email" placeholder="mail" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1 input-group reg">
+                        <span class="input-group-addon" >Contraseña</span>
+                        <input type="password" id="password" class="form-control" placeholder="password" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-reg" data-dismiss="modal">Cerrar</button>
+                    <button type="button" onclick="register()" class="btn btn-default btn-reg">Regístrate</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <!-- modal inicio sesión -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Inicia sesión</button>
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="gridSystemModalLabel2">Inicio sesión</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                      <i class="fa fa-user-circle init-login" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1 input-group reg user">
+                      <span class="input-group-addon">Email</span>
+                      <input type="text" id="email2" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1 input-group reg">
+                      <span class="input-group-addon">Contraseña</span>
+                      <input type="password" id="password2" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" onclick="ingreso()" class="btn btn-default" id="login-btn" data-dismiss="modal">Entrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--explorar -->
+            <a class="btn btn-primary " id="btn-kids" href="kids.html">KIDS</a>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

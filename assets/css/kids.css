@@ -1,0 +1,105 @@
+body{
+  background-color:#F6EDD3;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+  background-color: #FAC960;
+  border:none;
+  padding: 0.7%;
+}
+fa-user-circle-o, .fa-facebook-official, .fa-twitter-square{
+  font-size: 2em;
+  margin-top: -18%;
+  color: #F6EDD3;
+  padding: -20
+}
+li:hover{
+  color: #E87C0B;
+}
+.fa-user-circle-o:hover, .fa-facebook-official:hover, .fa-twitter-square:hover{
+  color: #6CC4B3;
+}
+.title-carousel2{
+    padding-top: 2.9em;
+    padding-left: 2em;
+    margin: 0;
+    font-size: 5em;
+    color: #F6EDD3;
+    font-weight: bolder;
+    margin-left: 53%;
+}
+.paragraph-carousel-kids{
+  font-size: 2em;
+  padding-left: 2em;
+  font-weight: bold;
+  color: red;
+  margin-left: 60%;
+}
+h1 .notKidBig{
+  color: cadetblue;
+}
+
+.btn-default{
+  background-color: #6CC4B3;
+}
+.opacar {
+    background-image: url(../img/transpa.png);
+    opacity: 0.9;
+    height: 100%;
+    margin-right: 0%;
+}
+.side-menu-basic{
+  background-color: #5B9496;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.noKids{
+  color: white;
+  font-size: 2em;
+}
+
+.titleKids {
+    padding-left: 10%;
+}
+.list-group-item{
+  background-color: #D0E4EB;
+  border-color: white;
+}
+
+.isotipe{
+  width: 320%;
+  margin-top: 0%;
+  margin-bottom:1%;
+  
+}
+
+#bestMoviesKids img{
+  width: 100%;
+}
+
+
+.well{
+  border: none;
+  background-color: #D0E4EB;
+}
+
+hr{
+  border-color: white;
+}
+
+h2,h3,h5{
+  color:#5B9496;
+}
+.alert-kid{
+  font-size: 1.3em;
+  color: #5B9496;
+}
+
+.jumbotron{
+  background-color: #D0E4EB;
+
+}
+
+.notKidBig{
+  color:#5B9496;
+}
