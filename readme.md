@@ -4,7 +4,5 @@ Watch This es una plataforma digital que permite al usuario encontrar de manera 
 
 ![watchthis](https://user-images.githubusercontent.com/32287743/37947937-1045c9de-3164-11e8-8850-f04386ae13d5.png)
 
-
-
 ## Desarrollado para
 [Laboratoria Chile](https://meliveloz.github.io/hackathon)
