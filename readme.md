@@ -11,12 +11,12 @@ Watch This es una plataforma digital que permite al usuario encontrar de manera 
 
 ####     Como equipo tenemos el desafío de crear una solución/producto con la temática de "consumo de películas". Para esto hemos creado un producto digital llamado **Watch this** que te invitamos a conocer.
 
-# Watch this
+## Watch this
 
-### ¿Qué es lo que hace nuestros producto?
+### ¿Qué es lo que hace nuestro producto?
 ####  Busca películas y entrega información de manera rápida para nuestros usuarios. 
 
-### ¿Para quién está dirigido nuestros producto?
+### ¿Para quién está dirigido nuestro producto?
 ####  Para personas que quieran decidir rápidamente que película ver y no quiere ver trailers.
 
 ### ¿Por qué los usuarios preferirían nuestro producto?
@@ -49,7 +49,7 @@ Watch This es una plataforma digital que permite al usuario encontrar de manera 
 #### - Conectamos las calificaciones de los usuarios con pluggin star rating bootstrap.
 
 ## Que nos falta:
-####- Perfil usuario
+#### -Perfil usuario
 #### -watchlist dinámica
 #### -comentarios dinámicos con base de datos.
 
